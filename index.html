@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Batigma Faycal</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">Batigma Faycal</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects"
+                            onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact"
+                            onclick="toggleMenu()">Contact</a></li>
+                </div>
+
+            </div>
+        </nav>
+
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile.png" alt>
+            </div>
+            <div class="section__text">
+                <p class="section_textp1">Hello, I'm</p>
+                <h1>Batigma Faycal</h1>
+                <p class="section_text_p2">Developper - Data Analyst</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2"
+                        onclick="window.open('./assets/resumeCV.pdf')">Download
+                        CV</button>
+                    <button class="btn btn-color-1"
+                        onclick="location.href='#contact'">Contact info</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./assets/github.png" alt="Gt" class="icon"
+                        onclick="location.href='https://github.com/Batigma'">
+                    <img src="./assets/linkedin.png" alt="Lk" class="icon"
+                        onclick="location.href='https://linkedin.com/Batigma'">
+                    <img src="./assets/instagram.png" alt="In" class="icon"
+                        onclick="location.href='https://instagram.com/Batigma'">
+
+                </div>
+            </section>
+
+            <section id="about">
+                <p class="section_text_p1">Get To Know More</p>
+                <h1 class="title">About me</h1>
+                <div class="section-container">
+                    <div class="section__pic-container">
+                        <img src="./assets/about-pic.png" alt="profile picture"
+                            class="about-pic">
+                    </div>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img src="./assets/experience.png"
+                                    alt="experience icon" class="icon">
+                                <h3>Experience</h3>
+                                <p>2+ years <br> Developpemnet</p>
+                            </div>
+                        </div>
+
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img src="./assets/education.png"
+                                    alt="education icon" class="icon">
+                                <h3>Education</h3>
+                                <p>Licence <br> Bac</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Cupiditate, sed magni similique earum vero
+                                quisquam qui
+                                consequuntur, accusamus aliquid quis corrupti,
+                                sapiente molestias eligendi ut maxime libero
+                                quasi!
+                                Atque, sunt impedit.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <img src="./assets/arrow.png" alt="arrow icon"
+                    class="icon arrow" onclick="location.href='#skills'">
+            </section>
+
+            <section id="skills">
+                <p class="section_text_p1">My Skills</p>
+                <h1 class="title">What I can do</h1>
+                <img src="./assets/arrow.png" alt="arrow icon"
+                class="icon arrow" onclick="location.href='#skills'">
+            </section>
+            <script src="script.js"></script>
+        </body>
+    </html>
